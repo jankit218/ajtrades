@@ -6,6 +6,8 @@ sudo chmod -R 775 /home/ubuntu/kite-traders1/ajtrades
 #sudo chown ubuntu:ubuntu /home/ubuntu/kite-traders1/*
 
 cd /home/ubuntu/kite-traders1
+sudo apt-get install python3-venv
+
 python3 -m venv venv
 source /home/ubuntu/kite-traders1/venv/bin/activate
 
