@@ -3,7 +3,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/kite-traders1/myproj
+    destination: /home/ec2-user/kite-traders1/ajtrades
 hooks:
   ApplicationStop:
     - location: scripts/application_stop.sh
