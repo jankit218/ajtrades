@@ -2,7 +2,7 @@
 #Before Starting the Application
 
 
-DIR="/home/ubuntu/kite-traders1"
+DIR="/home/ec2-user/kite-traders1"
 
 if [ -d "$DIR" ]; then
   echo "${DIR} exists"
@@ -15,7 +15,7 @@ fi
 
 
 
-DIR1="/home/ubuntu/kite-traders1/myproj"
+DIR1="/home/ec2-user/kite-traders1/myproj"
 
 if [ -d "$DIR1" ]; then
   echo "${DIR1} exists"
