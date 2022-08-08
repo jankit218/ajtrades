@@ -1,4 +1,4 @@
-KiteTraders – Free Stock Market web application using real time value from API
+AJTrades – Free Stock Market web application using real time value from API
 
 System Prerequisites 
 Following packages and tools will be needed to run the application on a system.
