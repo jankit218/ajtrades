@@ -1,29 +1,29 @@
 AJTrades – Free Stock Market web application using real time value from API
 
 System Prerequisites 
-Following packages and tools will be needed to run the application on a system.
-    • Python >= 3.7
-    • datetime
-    • SQLite3
-    • Flask and flash, jsonify, redirect, render_template, and request
-    • Flask_session
-    • tempfile
+# Following packages and tools will be needed to run the application on a system.
+##    • Python >= 3.7
+##    • datetime
+##    • SQLite3
+##    • Flask and flash, jsonify, redirect, render_template, and request
+##    • Flask_session
+##    • tempfile
 
-Steps to Run the application
-    • Create account on https://iexcloud.io/ and get the API key
-    • Login to aws cloud
-    • Check the roles under IAM service, add CodeDeploy role and  add AWSCodeDeployRole policy.
-    • Create EC2 instance and with Ubuntu as a platform and provide EC2CodeDeployRole in IAM Role.
-    • Under user data for EC2 instance creation, include below scripts
+# Steps to Run the application
+##    • Create account on https://iexcloud.io/ and get the API key
+##    • Login to aws cloud
+##    • Check the roles under IAM service, add CodeDeploy role and  add AWSCodeDeployRole policy.
+##    • Create EC2 instance and with Ubuntu as a platform and provide EC2CodeDeployRole in IAM Role.
+##    • Under user data for EC2 instance creation, include below scripts
 
-	sudo apt update
-	sudo apt-get install ruby
-	sudo apt install wget
-	cd /home/ubuntu
-	wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
-	sudo chmod +x ./install
-	sudo ./install auto
-	export API_KEY=<API_KEY from IEXCloud>
+### 	sudo apt update
+### 	sudo apt-get install ruby
+### 	sudo apt install wget
+### 	cd /home/ubuntu
+### 	wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
+### 	sudo chmod +x ./install
+### 	sudo ./install auto
+### 	export API_KEY=<API_KEY from IEXCloud>
 
     •  Create the instance
     • create application on CodeDeploy
@@ -31,17 +31,17 @@ Steps to Run the application
     • Create aws codepipeline and provide github account and repository to pull the data.
     • After successful execution of the pipeline, go to public IP of the EC2 instance and 5000 port, eg. 192.168.0.1:5000/
 
-If running the application on local machine use below steps,
-    • open the terminal and perform below steps. 
-    • python -m venv env   
-    • source env/bin/activate
-    • git clone https://github.com/ketanmb69/kite_traders.git
-    • cd <repository_name>
-    • export API_KEY=<API_KEY from IEXCloud>
-    • pip install -r requirements.txt
-    • Run the application using “python application.py”
+# If running the application on local machine use below steps,
+##    • open the terminal and perform below steps. 
+##    • python -m venv env   
+##    • source env/bin/activate
+##    • git clone https://github.com/jankit218/ajtrades.git
+##    • cd <repository_name>
+##    • export API_KEY=<API_KEY from IEXCloud>
+##    • pip install -r requirements.txt
+##    • Run the application using “python application.py”
 
-The application will be accessible on the IP of the system and 5000 port.
+# The application will be accessible on the IP of the system and 5000 port.
 
 Main Built-in Functionalities:
     • Password Hashing – This application hashes the password of the user, so no one can see the password(Werkzeug.security).
